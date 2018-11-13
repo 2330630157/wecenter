@@ -491,7 +491,7 @@ class openid_weixin_weixin_class extends AWS_MODEL
 
         $cached_ticket = 'weixin_jsapi_ticket_' . md5($access_token);
 
-        $jsapi_ticket = AWS_APP::cache()->get($jsapi_ticket);
+        $jsapi_ticket = AWS_APP::cache()->get($cached_ticket);
 
         if ($jsapi_ticket)
         {
